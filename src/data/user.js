@@ -1,11 +1,9 @@
 // src/data/user.js
 
-// DATOS PERSONALES
-export const userProfile = {
+export const user = {
   name: "Leonardo José Medina Flores",
   role: "Estudiante de Ingeniería de Sistemas y Computación",
-  
-  description: "Desarrollador de Software con sólida formación en Python, Java y SQL. Me especializo en construir soluciones eficientes, desde aplicaciones móviles hasta sistemas web escalables.",
+  description: "Soy un apasionado por la tecnología y la innovación. Me define la curiosidad y el interés constante por aprender cosas nuevas, desde arquitecturas de software hasta las últimas herramientas de IA. Busco un entorno donde pueda aportar mis habilidades y seguir desafiándome profesionalmente.",
   social: {
     github: "https://github.com/leoMedi09", 
     linkedin: "https://www.linkedin.com/in/leomedina", 
@@ -13,38 +11,34 @@ export const userProfile = {
   }
 };
 
-// HABILIDADES TÉCNICAS
-
 export const skills = [
-  { name: "Python & Flask/FastAPI", level: 95 },
-  { name: "Java & Programación OO", level: 85 },
-  { name: "SQL (MySQL/PostgreSQL)", level: 90 }, 
-  { name: "React, Vite & Tailwind", level: 80 }, 
-  { name: "Android Studio & Móvil", level: 75 },
+  { name: "Python (Flask/FastAPI)", level: 90 },
+  { name: "Java & POO", level: 85 },
+  { name: "SQL (MySQL/PostgreSQL)", level: 85 }, 
+  { name: "React & Frontend", level: 75 }, 
+  { name: "Desarrollo Móvil Android", level: 75 },
 ];
-
-// PROYECTOS DESTACADOS
 
 export const projects = [
   {
+    title: "Sistema de Gestión (CRUD)",
+    description: "Aplicación web full-stack para administrar inventarios o usuarios. Permite crear, leer, actualizar y eliminar registros en tiempo real. Este proyecto demuestra mi capacidad para manejar bases de datos relacionales y conectar el backend con el frontend eficientemente.",
+    tags: ["React", "Python Flask", "MySQL", "Gestión"],
+    link: "https://github.com/leoMedi09/Proyecto_CRUD_Gestion", 
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" 
+  },
+  {
+    title: "Chatbot con IA",
+    description: "Asistente virtual inteligente capaz de responder preguntas y procesar lenguaje natural. Desarrollado integrando APIs modernas de Inteligencia Artificial, explorando cómo la tecnología puede automatizar la atención y mejorar la experiencia del usuario.",
+    tags: ["Python", "OpenAI API", "Streamlit", "IA"],
+    link: "https://github.com/leoMedi09/Chatbot_IA.git",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop" 
+  },
+  {
     title: "Cita Salud - App Móvil",
-    description: "Solución integral para reserva de citas médicas en zonas rurales. Incluye App nativa Android y panel administrativo Web.",
-    tags: ["Android Studio", "FastAPI", "PostgreSQL", "Vite"], 
-    link: "#", 
+    description: "Solución móvil nativa diseñada para reservar citas médicas en zonas rurales. Incluye una App Android intuitiva y un panel administrativo web, resolviendo una problemática real de accesibilidad a la salud mediante tecnología.",
+    tags: ["Android Studio", "FastAPI", "PostgreSQL", "App Nativa"], 
+    link: "https://github.com/leoMedi09/Cita_Salud_RobleFarma",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1000" 
-  },
-  {
-    title: "Guanacargo - Logística",
-    description: "Plataforma web para optimizar la gestión de envíos y encomiendas. Módulos de tracking, almacén y administración de clientes.",
-    tags: ["Python Flask", "MySQL", "Tailwind CSS"],
-    link: "#",
-    image: "https://images.unsplash.com/photo-1566576912902-199bd62052db?auto=format&fit=crop&q=80&w=1000" 
-  },
-  {
-    title: "Automatización Growby",
-    description: "Scripts de Python para descarga masiva de datos y automatización de correos integrados con ERP mediante APIs REST.",
-    tags: ["Python", "Automatización", "APIs REST"], 
-    link: "#",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000" 
   }
 ];

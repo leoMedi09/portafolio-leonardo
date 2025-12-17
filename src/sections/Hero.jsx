@@ -1,6 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
-import { userProfile } from "../data/user";
+import { user} from "../data/user";
 
 const Hero = () => {
 
@@ -20,15 +20,15 @@ const Hero = () => {
 
           {/* Nombre y Rol */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            Soy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{userProfile.name}</span>
+            Soy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{user.name}</span>
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-6 font-light">
-            {userProfile.role}
+            {user.role}
           </h2>
 
           <p className="text-gray-400 text-lg mb-8 leading-relaxed max-w-2xl">
-            {userProfile.description}
+            {user.description}
           </p>
 
           {/* Botones y Redes Sociales */}
@@ -41,9 +41,9 @@ const Hero = () => {
             </a>
             
             <div className="flex gap-4 md:ml-6">
-              <SocialBtn href={userProfile.social.github} icon={<Github size={20} />} />
-              <SocialBtn href={userProfile.social.linkedin} icon={<Linkedin size={20} />} />
-              <SocialBtn href={userProfile.social.email} icon={<Mail size={20} />} />
+              <SocialBtn href={user.social.github} icon={<Github size={20} />} />
+              <SocialBtn href={user.social.linkedin} icon={<Linkedin size={20} />} />
+              <SocialBtn href={user.social.email} icon={<Mail size={20} />} />
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { userProfile } from '../data/user';
+import { user } from '../data/user';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
         
         {/* Logo dinámico */}
         <a href="#" className="text-xl font-bold text-white tracking-tighter hover:text-blue-400 transition">
-          {userProfile.name.split(' ')[0].toUpperCase()}
+          {user.name.split(' ')[0].toUpperCase()}
           <span className="text-blue-500">.DEV</span>
         </a>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
               {link.name.toUpperCase()}
             </a>
           ))}
-          <a href={userProfile.social.email} className="px-5 py-2 text-sm font-bold text-black bg-white rounded-full hover:bg-gray-200 transition">
+          <a href={user.social.email} className="px-5 py-2 text-sm font-bold text-black bg-white rounded-full hover:bg-gray-200 transition">
             Contactar
           </a>
         </div>
